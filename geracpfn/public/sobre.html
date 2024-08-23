@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../src/assets/css/styles.css">
+  <script src="https://kit.fontawesome.com/622f2dc9af.js" crossorigin="anonymous"></script>
+  <title>Sobre</title>
+</head>
+
+<body>
+
+  <header class="nav">
+    <i class="fa-solid fa-clipboard-check logo"></i>
+    <ul class="nav-bar">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="#">Sobre</a></li>
+      <li><a href="validador.html">Validar</a></li>
+      <li><a href="gerador.html">Gerar</a></li>
+    </ul>
+
+    <div class="toggle-icon">
+      <i class="fa-solid fa-bars "></i>
+    </div>
+  </header>
+
+  <ul class="nav-bar-toggle">
+    <li><a href="home.html">Home</a></li>
+    <li><a href="#">Sobre</a></li>
+    <li><a href="validador.html">Validar</a></li>
+    <li><a href="gerador.html">Gerar</a></li>
+  </ul>
+
+  <section class="principal-section">
+    <h1>Sobre Nós</h1>
+    <h2>Como Funciona o Site</h2>
+    <p>Nosso site é projetado para fornecer uma solução rápida e eficiente para a geração e validação de CPFs. Através de uma interface simples e intuitiva, você pode gerar CPFs válidos ou validar a autenticidade de um CPF existente em apenas alguns segundos. Utilizamos algoritmos confiáveis para garantir a precisão e a integridade dos números gerados e validados, assegurando que você possa confiar nos resultados fornecidos.</p>
+
+    <h2>Como Funciona a Geração de CPFs</h2>
+    <p>A geração de CPFs em nosso site é baseada em um algoritmo específico que segue as regras estabelecidas pela Receita Federal do Brasil. O CPF (Cadastro de Pessoas Físicas) é composto por 11 dígitos, onde os nove primeiros são números aleatórios e os dois últimos são dígitos verificadores. Esses dígitos verificadores são calculados a partir dos nove primeiros dígitos utilizando um método de multiplicação e soma, seguido por uma divisão e extração do resto.</p>
+
+    <h2>O processo é o seguinte:</h2>
+
+    <p><strong>Primeiro Dígito Verificador:</strong> Calculado a partir dos nove primeiros dígitos, multiplicando cada um por um peso decrescente de 10 a 2, somando os resultados e calculando o resto da divisão por 11. Se o resto for 10 ou 11, o dígito verificador é 0.</p>
+
+    <p><strong>Segundo Dígito Verificador: </strong> Calculado a partir dos nove dígitos iniciais mais o primeiro dígito verificador, multiplicando cada um por um peso decrescente de 11 a 2, somando os resultados e calculando o resto da divisão por 11. Se o resto for 10 ou 11, o dígito verificador é 0.</p>
+
+    <p>Nosso gerador automatiza todo esse processo, garantindo que os CPFs gerados sejam sempre válidos.</p>
+
+    <h2>Como Funciona a Validação de CPFs</h2>
+
+    <p>A validação de um CPF é feita verificando se os dígitos verificadores estão corretos em relação aos nove primeiros dígitos do CPF. O processo de validação é o seguinte:</p>
+
+    <p><strong>Verificação do Primeiro Dígito Verificador: </strong> Multiplicamos os nove primeiros dígitos por pesos decrescentes de 10 a 2, somamos os resultados, calculamos o resto da divisão por 11 e comparamos com o primeiro dígito verificador do CPF. Se o resto for 10 ou 11, o dígito verificador deve ser 0.</p>
+
+    <p><strong>Verificação do Segundo Dígito Verificador: </strong> Multiplicamos os nove primeiros dígitos mais o primeiro dígito verificador por pesos decrescentes de 11 a 2, somamos os resultados, calculamos o resto da divisão por 11 e comparamos com o segundo dígito verificador do CPF. Se o resto for 10 ou 11, o dígito verificador deve ser 0.</p>
+
+    <p>Se ambos os dígitos verificadores estiverem corretos, o CPF é considerado válido. Nosso validador automatiza esse processo para fornecer resultados precisos e rápidos.</p>
+
+    <h2>Nossa Missão</h2>
+
+    <p>Nossa missão é oferecer uma ferramenta confiável e fácil de usar para a geração e validação de CPFs. Comprometemo-nos com a precisão dos nossos algoritmos e a utilidade do nosso serviço, garantindo que você possa confiar nos CPFs gerados e validados em nosso site. Queremos simplificar processos administrativos e testes de sistemas, proporcionando uma experiência eficiente e descomplicada para todos os nossos usuários.
+    </p>
+
+  </section>
+
+  <script src="./assets/js/bundle.js"></script>
+</body>
+
+</html>

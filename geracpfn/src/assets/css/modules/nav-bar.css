@@ -1,0 +1,41 @@
+.nav {
+    background: var(--primary-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 10rem;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    list-style: none;
+    padding: 2rem 0;
+}
+
+.toggle-icon {
+    display: none;
+}
+
+.nav-bar-toggle {
+    display: none
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-text-color);
+    padding: 0 0 0.5rem 0;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: var(--emphasis-color);
+    border-bottom: 2px solid var(--emphasis-color);
+}
+
+i {
+    padding: 1rem;
+    font-size: 4rem;
+    color: var(--emphasis-color);
+}
