@@ -7,6 +7,10 @@
   ],
   "routes": [
     {
+      "src": "/assets/js/(.*)",
+      "dest": "/public/assets/js/$1"
+    },
+    {
       "src": "/(.*)",
       "dest": "/public/$1"
     }
