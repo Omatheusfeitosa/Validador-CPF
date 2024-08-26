@@ -7,24 +7,8 @@
   ],
   "routes": [
     {
-      "src": "/gerador",
-      "dest": "/public/gerador.html"
-    },
-    {
-      "src": "/home",
-      "dest": "/public/home.html"
-    },
-    {
-      "src": "/sobre",
-      "dest": "/public/sobre.html"
-    },
-    {
-      "src": "/validador",
-      "dest": "/public/validador.html"
-    },
-    {
-      "src": "/assets/js/(.*)",
-      "dest": "/public/assets/js/$1"
+      "src": "/(.*)",
+      "dest": "/public/$1"
     }
   ]
 }
